@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: c26d59f38e1a473459f6fe07431e78ad
+  - enabled: 1
+    path: Assets/Scenes/TestGround.unity
+    guid: 6ec7e1ddc1752ce43be77461a6f59e08
+  - enabled: 1
+    path: Assets/Scenes/MatchSetup.unity
+    guid: ecdc7cebbf5c8034da0c7dfee2f7c9fc
+  - enabled: 1
+    path: Assets/Scenes/Battle.unity
+    guid: a8f739dc825b1524895ab5172a9b8b81
+  - enabled: 1
+    path: Assets/Scenes/Collection.unity
+    guid: 467caff2353b5a24f8bc3f5c00a1b304
+  - enabled: 1
+    path: Assets/Scenes/StoryMap.unity
+    guid: 2b0e39ff94e1fe645bdf43e7da0099a4
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer.unity
+    guid: 54bb28226bd28ba49bdcecdd4dfa0057
+  - enabled: 1
+    path: Assets/Scenes/Gauntlet.unity
+    guid: ab428a2e0e3b67d4b9b90c5693bc89f7
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 84f5c5f169e933146b0e93ea8c2e799c
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 47ab8d756ecad914bae189ccf872369a
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0

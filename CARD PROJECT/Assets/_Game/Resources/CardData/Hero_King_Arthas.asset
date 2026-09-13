@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf557d9e47145a54e965b1dd1bf10821, type: 3}
+  m_Name: Hero_King_Arthas
+  m_EditorClassIdentifier: Assembly-CSharp::LordOfTheRealms.HeroCardData
+  cardName: King Arthas
+  race: 2
+  cost: 6
+  artwork: {fileID: 0}
+  description: He carries the crown and its heavy price.
+  ability: 4
+  abilityValue: 2
+  attack: 5
+  health: 6
+  abilityMode: 0
+  abilityDescription: When summoned, give your units +2 attack.
+  returnToDeckOnDeath: 1

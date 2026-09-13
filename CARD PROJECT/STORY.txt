@@ -1,0 +1,221 @@
+LORD OF THE REALMS / VLADAR SVJETOVA
+Razrada price i svijeta
+==============================================================================
+Ovaj dokument je izvor istine za narativ. Kod ga zrcali u:
+  Assets/_Game/Scripts/Core/StoryData.cs  ->  klasa StoryLore
+      - Commanders : ime + titula protivnika po nodeu
+      - Texts      : tekst prije bitke (lore prozor na story mapi)
+==============================================================================
+
+
+1. SVIJET
+------------------------------------------------------------------------------
+Svijet se zove AETHEL. Cetiri realma, jedna planina u sredini.
+
+Nekad je Aethelom vladao jedan covjek pod SUNDERED CROWN (Razlomljenom krunom).
+Kruna nije bila nakit nego sporazum: dok je jedan nosi, cetiri naroda ne ratuju.
+Radila je otprilike stotinu godina. Onda je pukla.
+
+Nitko se ne slaze oko toga zasto. Orci kazu da je kralj htio previse. Vilenjaci
+kazu da kruna nikad nije ni bila njegova. Ljudi kazu da je bila nesreca. Demoni
+ne kazu nista, jer su se tog dana prvi put pojavili.
+
+Kad je kruna pukla, dogodile su se dvije stvari:
+  a) Cetiri KRHOTINE (Shards) su pale, po jedna u svaki realm.
+  b) U sredini svijeta, na planini ASHMOUNT, otvorila se pukotina — THE MAW
+     (Zdrijelo). Iz nje su izasli demoni. Nikad se nije zatvorila.
+
+Ovaj dogadaj se zove THE SUNDERING (Razlom).
+
+
+2. KRHOTINE
+------------------------------------------------------------------------------
+Svaka krhotina je mali komad onog sporazuma. Sama za sebe, krhotina samo sapce:
+daje nositelju autoritet, dug zivot i losu naviku da misli da je u pravu.
+
+  EMBER SHARD    (Orci)     - u drsci sjekire Khana Ur'gatha
+  VERDANT SHARD  (Vilenjaci)- urasla u srce Elderroota Cael'dorina
+  SUNLIT SHARD   (Ljudi)    - pod jastukom kralja koji ne spava vec devet godina
+  ASHEN SHARD    (Demoni)   - drzi je Ghar'moth the Unmaker, i nije njegova
+
+Sve cetiri zajedno mogu zatvoriti Maw. Ili ga otvoriti zauvijek. To je ista
+radnja — razlika je samo tko drzi krunu kad se sklopi.
+
+TO JE CIJELA IGRA: skupis cetiri krhotine i netko ce ih upotrijebiti.
+
+
+3. IGRAC
+------------------------------------------------------------------------------
+Igrac je LORD jednog od cetiri realma (bira se na New Game). Nema ime — to je
+namjerno, igrac je taj lord.
+
+Motivacija: Maw se siri. Realmi to znaju i svejedno ne zele suradnju, jer bi
+suradnja znacila da netko drugi vodi. Lord zakljuci ono sto svi izbjegavaju:
+ujedinjenje se nece dogoditi dogovorom. Dogodit ce se tako da ga netko nametne.
+
+Zato lord kreni po krhotine. Redom: Red Steppe -> Silverwood -> Highmarch ->
+Ashen Waste -> Ashmount.
+
+VAZNO ZA IGRIVOST: igrac se bori i protiv vlastite rase. To nije bug u prici —
+to je poanta. Prvi realm koji moras slomiti moze biti tvoj vlastiti, i nitko u
+tvom realmu ne misli da si u pravu. Ti si za njih uzurpator, ne osloboditelj.
+
+
+4. CETIRI REALMA (regije na mapi)
+------------------------------------------------------------------------------
+I.   THE RED STEPPE (Orci)
+     Stepa boje stare krvi. Klanovi vezani u BLOODMOOT — savez koji funkcionira
+     samo dok ga netko jaci drzi. Ne postuju krunu; postuju rezultat.
+     Tema regije: snaga se dokazuje, ne nasljeduje.
+
+II.  THE SILVERWOOD (Vilenjaci)
+     Suma koja pamti Razlom jer ga je vidjela. Vilenjaci nisu neutralni, samo su
+     strpljivi. Vidjeli su vec lordove s krhotinama i znaju kako to zavrsi.
+     Tema regije: sjecanje kao obrana.
+
+III. HIGHMARCH (Ljudi)
+     Kraljevstvo koje se pretvara da rata nema. Ceste poplocane, polja izorana,
+     kralj u komi devet godina, a Regent vlada u njegovo ime. Highmarch je miran
+     jer je Regent sklopio pakt s Mawom: demoni ne diraju njegove granice, a on
+     ne pita kamo idu njegovi nestali.
+     Tema regije: cijena udobnosti.
+
+IV.  THE ASHEN WASTE (Demoni)
+     Pustos oko Zdrijela. Demoni nisu horda nego BIROKRACIJA — broje duse,
+     vode knjige, imaju cinove. To ih cini gorima, ne boljima.
+     Tema regije: zlo koje radi po rasporedu.
+
+V.   ASHMOUNT (finale)
+     Planina i pukotina. Gore ceka THE HOLLOW KING.
+
+
+5. THE HOLLOW KING (finalni protivnik)
+------------------------------------------------------------------------------
+Zadnji lord koji je ujedinio realme. Nosio je Sundered Crown kad je pukla i nije
+umro — kruna ga je ispraznila i ostavila ono sto je od nje ostalo: savrsenu,
+strpljivu volju koja zeli biti cijela.
+
+Nije lud i ne mrzi nikoga. To je najgori dio. On je logican zakljucak istog
+plana koji igrac provodi cijelu igru: ujedini sve, po svaku cijenu, jer je
+alternativa gora. Razlika izmedu njega i igraca je samo broj godina.
+
+Cekao je stotinu godina da netko skupi sve cetiri krhotine i donese mu ih na
+vrh planine. Igrac je upravo to napravio.
+
+REPLIKA KOJA NOSI FINALE (za kasnije, ako se dodaje dijalog):
+  "Ti si trece koje je stiglo ovako daleko. Prvi je odbio. Drugi je pristao.
+   Oboje su ovdje."
+
+
+6. STRUKTURA KAMPANJE (21 borba)
+------------------------------------------------------------------------------
+Format: NODE | IME | KRATKO
+
+--- I. RED STEPPE (Orci) ---
+Orcs_1 | Skarn Ashtooth, Raid-Leader
+        Mlad, glasan, testira granice kao vuk ogradu. Misli da rat gubi onaj
+        tko prvi prokrvari.
+Orcs_2 | Gora Two-Axes, Warden of the Ford
+        Drzi prijelaz Ashmere tri zime. Zakopala je svakog lorda koji se bunio.
+Orcs_3 | Vhek the Drumbound
+        Odrezao si jezik da nista ne nadglasa bubanj. Njegovi jahaci se krecu
+        kao jedna zivotinja.
+Orcs_4 | Morg Ironjaw, Banner-Captain
+        Nosi Khanov barjak. Bez hvalisanja, bez bubnjeva — samo linija stitova.
+        Bori se protiv tebe da te izmjeri za svog Khana.
+Orcs_5 | Ur'gath, Khan of the Bloodmoot        [EMBER SHARD]
+        Krhotina u drsci sjekire, nije je izvukao jedanaest godina. Nudi ti
+        staru stepsku uljudnost: pobijedis — krhotina i klanovi su tvoji.
+
+--- II. SILVERWOOD (Vilenjaci) ---
+Elves_1 | Sentinel Aelira of the Old Road
+        Uljudnost tako hladna da rjeze. Vracala je i kraljeve i trgovce.
+Elves_2 | Keeper Lysvane of the Moonwell
+        Cuva zdence mjesecine dulje nego sto tvoje prezime postoji.
+Elves_3 | Thornmother Ysseldra
+        Hoda ispred korijenja, u kori kao u oklopu. Pamti Razlom. Pamti sto
+        lordovi s krhotinama uvijek obecaju i sto uvijek slijedi.
+Elves_4 | Starcaller Neriel
+        Cita nebo i nalazi tvoje ime lose napisano u njemu.
+Elves_5 | Elderroot Cael'dorin                 [VERDANT SHARD]
+        Krhotina mu je urasla u srce. Da je uzmes, moras uvjeriti bice starije
+        od rata da rat vrijedi.
+
+--- III. HIGHMARCH (Ljudi) ---
+Humans_1 | Captain Ordwin Vale
+        Cetrdeset ljudi i zapovijed od Regenta koji tvrdi da je Highmarch
+        neutralan. Ordwin zna bolje. Svejedno ce poslusati.
+Humans_2 | Ser Katherin Marlow
+        Savrsen poredak, sjajna koplja. Zeli zavrsiti u jednom naletu iz
+        najcistijeg razloga: tako je manje sprovoda.
+Humans_3 | Master Engineer Hollis Ferrin
+        Donosi zidine sa sobom. Nikad nije drzao mac i ubio je vise vojnika
+        nego itko drugi u ovom pohodu.
+Humans_4 | Lord Commander Bertran Kaul
+        Moli se, kratko, za obje vojske. Onda radi svoju duznost, koju nikad
+        nije zamijenio s milosrdem.
+Humans_5 | Regent Aldric Vayne                 [SUNLIT SHARD]
+        Vlada za kralja koji se ne budi. Trgovao je s Mawom da mu granice budu
+        mirne. Zeli da razumijes da nije imao izbora.
+
+--- IV. ASHEN WASTE (Demoni) ---
+Demons_1 | Grishk Gigglespine
+        Impovi koji se smiju svemu. To je gore nego da se ne smiju.
+Demons_2 | Vareth the Houndmaster
+        Copor koji lovi iskljucivo strahom, a strah vojske lose skrivaju.
+Demons_3 | Xarveth, Harvester of Souls
+        Zetva dusa kao zetva zita. Tvoju vojsku je vec izbrojao dvaput: jednom
+        kao neprijatelje, jednom kao prinos.
+Demons_4 | Dread Marshal Nekh'zul
+        Bio je smrtni general prije Razloma i jos uvijek je — neosporno — dobar.
+        Uzas ispred njega marsira u redovima i drzi korak.
+Demons_5 | Ghar'moth the Unmaker               [ASHEN SHARD] [+ DRUGI HEROJ]
+        Drzi krhotinu koja nikad nije bila njegova. Kad padne, oslobodis
+        prvaka kojeg je ovdje drzao okovanog — i on se od tog dana bori uz tebe.
+        (Ovo je mehanicki unlock drugog heroja tvoje rase.)
+
+--- FINALE ---
+Final | The Hollow King                        [ASHMOUNT]
+        Cetiri krhotine. Jedan put, i ide gore.
+
+
+7. KAKO SE NARATIV POKLAPA S MEHANIKOM
+------------------------------------------------------------------------------
+  - 20 regijskih borbi = 19 karata + drugi heroj (Demons_5).
+    Prica to objasnjava: svaka pobjeda ti donosi ratnike/oruzje tvog realma
+    (karte), a Ghar'mothov pad ti oslobada prvaka (heroj).
+  - Finale ne daje kartu nego GOLDEN FRAME: nagrada je status, ne moc.
+    Prica: kruna ne daje nista novo, samo priznaje ono sto vec jesi.
+  - 4 save slota = 4 razlicita lorda / 4 razlicite kampanje.
+  - Card unlockovi su globalni: znanje o realmu ostaje, bez obzira koji lord.
+
+
+8. TON
+------------------------------------------------------------------------------
+Nije "dobri protiv zlih". Svaki protivnik ima razlog koji drzi vodu:
+  - Gora brani prijelaz jer je to njen posao.
+  - Ysseldra te odbija jer je vec vidjela ovaj film.
+  - Kaul se moli za obje vojske i svejedno te ubija.
+  - Vayne je prodao ljude za mir i moze ti objasniti racunicu.
+Igrac je taj koji svakome od njih uzima ono sto brane. Finale samo pita:
+koliko si ti drukciji od kralja koji te ceka?
+
+Suh, kratak, malo crnog humora (Grishk, Ferrin). Bez patetike.
+
+
+9. STO JOS NIJE NAPISANO (ideje za dalje)
+------------------------------------------------------------------------------
+  - Dijalog nakon pobjede (2-3 recenice po protivniku, "sto kaze kad izgubi").
+  - Dva zavrsetka: zatvori Maw (krhotine se troše, realmi ostaju razdvojeni)
+    ili sklopi krunu (mir pod tobom — i postanes sljedeci Hollow King).
+  - Lore po rasi za igraca: isti node, drukcija recenica ovisno o tvom realmu.
+  - Imena heroja: PRIMIJENJENA su originalna imena (bila su iz Warcrafta):
+        Orci      : Kragmaw, Warchief          | Dro'gan the Relentless
+        Vilenjaci : Faelan, Archdruid          | Sylvara, Moon Priestess
+        Ljudi     : King Cedric                | Baelric the Lightbringer
+        Demoni    : Vor'gathul (finalni boss)  | Zar'thul the Destroyer
+    Nijedno se ne poklapa s imenom protivnika iz price. Stari savevi se
+    migriraju (DeckStorage.MigrateHero + StoryProgress rename v1).
+    NAPOMENA: Ghar'moth the Unmaker je i dalje SAMO ime protivnika na Demons_5
+    (nije heroj), pa se poklapanja nema.
+==============================================================================

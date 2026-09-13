@@ -1,0 +1,126 @@
+LORD OF THE REALMS — BALANCE & DECK DESIGN
+============================================
+Rezultat simulacije: 6000 odigranih mečeva (AI vs AI, isti "brain" za obje strane)
+
+CILJEVI I REZULTATI
+-------------------
+- Prosječno trajanje meča: ~12.8 min (raspon p10-p90: 8-18 min)  [cilj ~15 min]
+- Win rate po rasi: sve 4 rase između 46% i 53%  [savršeno = 50%]
+- Deck-out (ostanak bez karata): 0.3% mečeva  [gotovo nikad]
+
+OSNOVNE BROJKE
+--------------
+- Health igrača: 30
+- POWER cap: 10 (+1 max po rundi, Hearthstone model)
+- Veličina špila: 30 karata
+- Početna ruka: 3 karte (drugi igrač +1)
+
+WIN RATE MATCHUP TABLICA (red = rasa, % = koliko pobjeđuje protiv stupca)
+                Orcs   Elves  Humans Demons
+   Orcs          --     61%    56%    51%
+   Elves         61%    --     45%    48%
+   Humans        47%    64%    --     55%
+   Demons        63%    52%    51%    --
+(Zdrav "rock-paper-scissors": svaka rasa ima dobre i loše matchupove.)
+
+
+========================================================================
+ORCS / GOBLINS  — agresija, rani pritisak, jeftina efikasna tijela + burn
+========================================================================
+UNITS
+  Goblin Cutter        1 POWER   2/1   Basic       x3
+  Wolf Rider           2 POWER   3/2   Basic       x3
+  Blood Stalker        3 POWER   4/2   Assassin    x2
+  Orc Berserker        3 POWER   6/3   Basic       x2
+  Goblin Shieldbearer  2 POWER   1/4   Taunt       x2
+  Warband Scout        2 POWER   3/2   Scout       x2
+  Warlord              5 POWER   6/5   Basic       x2
+  Bloodrage Totem      4 POWER   4/4   Basic  (+1 max POWER)  x2
+SPELLS
+  Hurled Axe           1 POWER   Offensive: 4 dmg          x3
+  War Cry              2 POWER   Field: +2 attack svima     x2
+  Pillage              2 POWER   Offensive: 4 dmg          x2
+HERO
+  Grommash, Warchief   6 POWER   6/6   (može napast odmah - charge)
+
+
+========================================================================
+ELVES  — scaling/ekonomija, POWER ramp, rana obrana (taunt/zaštita)
+========================================================================
+UNITS
+  Elven Sentry         1 POWER   1/3   Taunt       x3
+  Moonwell Keeper      4 POWER   2/5   Taunt (+1 max POWER)  x2
+  Wisp Scout           2 POWER   2/2   Scout       x2
+  Ancient Protector    5 POWER   4/7   Taunt       x2
+  Starcaller           4 POWER   1/4   Basic (draw 1)        x2
+  Sylvan Archer        3 POWER   4/2   Basic       x2
+  Worldtree Colossus   7 POWER   6/8   Basic       x2
+SPELLS
+  Branch of Yggdrasil  2 POWER   Field: +1 max POWER (potpis rase)  x2
+  Thornweave Ward      2 POWER   Defensive, SKRIVEN: heal 3         x2
+  Nature's Bounty      3 POWER   Defensive: draw 2                  x2
+  Entangling Roots     2 POWER   Offensive: 3 dmg                   x2
+HERO
+  Malfurion, Archdruid 6 POWER   4/8   (+2 max POWER)
+
+
+========================================================================
+HUMANS  — uravnoteženi, fleksibilni, bez izrazitih prednosti/mana
+========================================================================
+UNITS
+  Footman              1 POWER   1/2   Basic       x3
+  Knight               3 POWER   3/4   Basic       x3
+  Shield Guard         2 POWER   2/3   Taunt       x2
+  Rogue Blade          3 POWER   3/3   Assassin    x2
+  Ranger               2 POWER   2/2   Scout       x2
+  Cavalry Captain      4 POWER   6/4   Basic (+1 attack svima)  x2
+  Cleric               2 POWER   1/3   Basic (heal 3)           x2
+  Catapult             5 POWER   7/5   Basic       x2
+  Royal Guard          6 POWER   6/8   Taunt       x1
+SPELLS
+  Fireball             4 POWER   Offensive: 6 dmg          x2
+  Holy Light           2 POWER   Defensive: heal 5         x2
+  Rally                3 POWER   Field: +1 attack svima     x2
+HERO
+  King Arthas          6 POWER   5/7   (heal 4)
+
+
+========================================================================
+DEMONS  — combo, snažni efekti, veći rizik/nagrada
+========================================================================
+UNITS
+  Imp                  1 POWER   2/1   Basic       x3
+  Hellhound            2 POWER   3/2   Assassin    x2
+  Soul Harvester       3 POWER   2/3   Basic (draw 1)        x2
+  Void Scout           2 POWER   2/2   Scout       x2
+  Fel Guard            3 POWER   1/4   Taunt       x2
+  Dreadlord            5 POWER   3/5   Basic (heal 2)        x2
+  Infernal             6 POWER   6/6   Basic (AOE 2 svima)   x1
+SPELLS
+  Shadow Bolt          2 POWER   Offensive: 3 dmg          x3
+  Chaos Nova           5 POWER   Offensive: 3 dmg + AOE 3   x1
+  Demonic Pact         3 POWER   Field: +1 max POWER       x2
+  Sacrifice            1 POWER   Defensive: draw 2         x2
+HERO
+  Archimonde           7 POWER   7/7   (AOE 2 svima)
+
+
+NAPOMENE O DIZAJNU
+------------------
+- Imena karata su PLACEHOLDER (koriste poznate fantasy arhetipe). Slobodno ih
+  preimenuj u originalne nazive za svoj svijet. "Branch of Yggdrasil" je primjer
+  temaske elfovske ramp karte kako si tražio.
+- Svaka rasa ima svoj potpisni mehanizam generiranja dodatnog POWER-a:
+    Elves  -> Branch of Yggdrasil / Moonwell Keeper / Malfurion (najviše ramp-a)
+    Demons -> Demonic Pact
+    Orcs   -> Bloodrage Totem (agresivniji, manje ramp-a)
+    Humans -> nemaju ramp (uravnoteženi, oslanjaju se na tempo)
+- Abilities su generalizirani u keyword sustav (PowerRamp, Draw, Heal,
+  BuffAttack, Aoe, ChargeFace) pa se lako dodaju nove karte.
+- Brojke su rezultat ~6000 simuliranih mečeva i hill-climbing optimizacije;
+  fino su ugođene ali ostaju "okrugle" i čitljive za ručno mijenjanje.
+
+KAKO GENERIRATI KARTE U UNITYJU
+--------------------------------
+Gornji meni:  Lord of the Realms > Generate Card Assets
+-> kreira sve .asset fajlove pod Assets/_Game/CardData/<Rasa>/

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd1a286d72d4524ba97059ca4c8f383, type: 3}
+  m_Name: Unit_Grove_Warden
+  m_EditorClassIdentifier: Assembly-CSharp::LordOfTheRealms.UnitCardData
+  cardName: Grove Warden
+  race: 1
+  cost: 3
+  maxPowerCost: 0
+  artwork: {fileID: 0}
+  description: The grove's wrath given root and limb.
+  ability: 0
+  abilityValue: 0
+  attack: 2
+  health: 4
+  unitType: 1
